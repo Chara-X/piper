@@ -1,0 +1,24 @@
+[package]
+name = "piper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# piper = "*"
+piper = { path = "../../../../.fork/piper" }
+futures-io = "*"
+atomic-waker = "*"
+
+[lints.rust]
+missing_docs = "deny"
+unsafe_code = "allow"
+unused_variables = "allow"
+
+[lints.clippy]
+new_without_default = "allow"
+len_without_is_empty = "allow"
+missing_safety_doc = "allow"
+module_inception = "allow"
+private_bounds = "allow"
+should_implement_trait = "allow"
+type_complexity = "allow"
